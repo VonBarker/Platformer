@@ -5,3 +5,5 @@ walksp = 4;
 jumpsp = 10;
 
 grounded = false;
+
+global.CameraZone = 0;

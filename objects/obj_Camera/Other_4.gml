@@ -1,6 +1,6 @@
 //Camera
-global.cameraX = 0;
-global.cameraY = 0;
+x = 0;
+y = 0;
 target = obj_Player;
 
 global.cameraWidth = 1366;
