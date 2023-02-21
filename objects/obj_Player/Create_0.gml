@@ -8,3 +8,6 @@ grounded = false;
 
 basicNotOnCooldown = true;
 basicCooldown = 0;
+
+meleeCooldown = 35;
+canAttack = true;
