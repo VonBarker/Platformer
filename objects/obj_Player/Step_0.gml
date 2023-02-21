@@ -3,6 +3,10 @@ key_left = keyboard_check(ord("A"));
 key_down = keyboard_check(ord("S"));
 key_right = keyboard_check(ord("D"));
 key_jump = keyboard_check_pressed(vk_space);
+key_basicAttack =  keyboard_check(ord("H"));
+key_attack1 = keyboard_check(ord("J"));
+key_attack2 = keyboard_check(ord("K"));
+key_attack3 = keyboard_check(ord("L"));
 
 // Movement
 var _move = key_right - key_left;
@@ -57,3 +61,19 @@ if (place_meeting(x,y+vsp,obj_Wall))
 	vsp = 0;
 }
 y = y + vsp;
+
+//Attacks
+
+if(key_basicAttack) && (basicNotOnCooldown)
+{
+	basicNotOnCooldown = false;
+	instance_create_layer(x, y, "Instances", obj_BasicProjectile);
+	basicCooldown = obj_BasicProjectile.cooldown;
+	alarm[0] = basicCooldown;
+}
+
+//Animation
+if (hsp != 0) && (!key_down)
+{
+	image_xscale = sign(hsp);
+}

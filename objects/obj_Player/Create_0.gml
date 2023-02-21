@@ -6,4 +6,5 @@ jumpsp = 10;
 
 grounded = false;
 
-global.CameraZone = 0;
+basicNotOnCooldown = true;
+basicCooldown = 0;

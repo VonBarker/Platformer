@@ -1,0 +1,1 @@
+basicNotOnCooldown = true;
