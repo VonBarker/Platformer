@@ -1,4 +1,7 @@
-hsp = dir * walksp;
+if(controlable)
+{
+	hsp = dir * walksp;
+}
 vsp = vsp + grv;
 
 //Horizontal Collision
