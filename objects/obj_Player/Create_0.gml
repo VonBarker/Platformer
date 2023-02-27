@@ -4,10 +4,16 @@ grv = 0.3;
 walksp = 4;
 jumpsp = 10;
 
+controlable = true;
+
 grounded = false;
+
+invincible = false;
+
+meleeCooldown = 35;
+canAttack = true;
 
 basicNotOnCooldown = true;
 basicCooldown = 0;
 
-meleeCooldown = 35;
-canAttack = true;
+hp = 100;

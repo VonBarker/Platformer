@@ -11,7 +11,12 @@ key_attack3 = keyboard_check(ord("L"));
 
 // Movement
 var _move = key_right - key_left;
-hsp = _move * walksp;
+
+if(controlable = true)
+{
+	hsp = _move * walksp;
+}
+
 if (place_meeting(x,y+1,obj_Wall))
 {
 	grounded = true;
@@ -77,23 +82,29 @@ if(key_MeleeAttack && key_up && canAttack)
 {
 	instance_create_layer(x, y - (sprite_height/2) - 10, "Instances", obj_UpwardAttack);
 	canAttack = false;
-	alarm[4] = meleeCooldown;
+	alarm[6] = meleeCooldown;
 }
 else if(key_MeleeAttack && key_down && canAttack)
 {
 	instance_create_layer(x, y + (sprite_height/2) + 10, "Instances", obj_DownwardAttack);
 	canAttack = false;
-	alarm[4] = meleeCooldown;
+	alarm[6] = meleeCooldown;
 }
 else if(key_MeleeAttack && canAttack)
 {
 	instance_create_layer(x + (32 * image_xscale), y, "Instances", obj_HorizontalAttack);
 	canAttack = false;
-	alarm[4] = meleeCooldown;
+	alarm[6] = meleeCooldown;
 }
 
 //Animation
 if (hsp != 0) && (!key_down)
 {
 	image_xscale = sign(hsp);
+}
+
+//Health
+if(hp <= 0)
+{
+	room_restart();
 }

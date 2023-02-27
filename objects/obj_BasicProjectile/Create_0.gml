@@ -4,3 +4,5 @@ startLocationX = x;
 startLocationY = y;
 
 cooldown = 30;
+
+damage = irandom_range(4,7);

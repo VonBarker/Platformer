@@ -1,0 +1,1 @@
+hp = hp - obj_Attack.damage;

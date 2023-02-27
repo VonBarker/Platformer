@@ -1,1 +1,1 @@
-canAttack = true;
+invincible = false;
