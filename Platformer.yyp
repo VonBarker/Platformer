@@ -7,6 +7,7 @@
     {"id":{"name":"obj_Wall","path":"objects/obj_Wall/obj_Wall.yy",},"order":1,},
     {"id":{"name":"obj_DownwardAttack","path":"objects/obj_DownwardAttack/obj_DownwardAttack.yy",},"order":8,},
     {"id":{"name":"obj_Attack","path":"objects/obj_Attack/obj_Attack.yy",},"order":4,},
+    {"id":{"name":"obj_ProjectileEnemy","path":"objects/obj_ProjectileEnemy/obj_ProjectileEnemy.yy",},"order":12,},
     {"id":{"name":"spr_CameraZone","path":"sprites/spr_CameraZone/spr_CameraZone.yy",},"order":2,},
     {"id":{"name":"obj_UpwardAttack","path":"objects/obj_UpwardAttack/obj_UpwardAttack.yy",},"order":7,},
     {"id":{"name":"spr_Wall","path":"sprites/spr_Wall/spr_Wall.yy",},"order":1,},
