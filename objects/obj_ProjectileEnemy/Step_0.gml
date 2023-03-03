@@ -1,4 +1,10 @@
-if(controlable && distance_to_object(obj_Player) < 300)
+if(distance_to_object(obj_Player) < 300)
+{
+	walksp = 0;
+}
+else walksp = 2;
+
+if(controlable)
 {
 	hsp = dir * walksp;
 }
@@ -36,6 +42,7 @@ y = y + vsp;
 if(distance_to_object(obj_Player) < 300 && attackNotOnCooldown)
 {
 	attackNotOnCooldown = false;
+	instance_create_layer(x, y, "Instances", obj_BasicEnemyProjectile);
 	alarm[2] = attackCooldown;
 }
 

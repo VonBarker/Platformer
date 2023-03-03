@@ -9,8 +9,8 @@ dir = -1;
 hp = 25;
 invincible = false;
 
-damage = irandom_range(5,8);
-knockbackForce = 5;
+damage = 0;
+knockbackForce = 0;
 
 attackNotOnCooldown = true;
-attackCooldown = 50;
+attackCooldown = 150;

@@ -1,0 +1,1 @@
+if (distance_to_point(startLocationX,startLocationY) > 450) instance_destroy();

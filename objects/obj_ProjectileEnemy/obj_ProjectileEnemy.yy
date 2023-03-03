@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "obj_ProjectileEnemy",
   "spriteId": {
-    "name": "spr_BasicEnemy",
-    "path": "sprites/spr_BasicEnemy/spr_BasicEnemy.yy",
+    "name": "spr_ProjectileEnemy",
+    "path": "sprites/spr_ProjectileEnemy/spr_ProjectileEnemy.yy",
   },
   "solid": false,
   "visible": true,
@@ -12,8 +12,8 @@
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": {
-    "name": "obj_Enemies",
-    "path": "objects/obj_Enemies/obj_Enemies.yy",
+    "name": "obj_EnemiesNoDamage",
+    "path": "objects/obj_EnemiesNoDamage/obj_EnemiesNoDamage.yy",
   },
   "physicsObject": false,
   "physicsSensor": false,
