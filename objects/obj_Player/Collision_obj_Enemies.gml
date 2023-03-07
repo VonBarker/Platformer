@@ -8,6 +8,7 @@ alarm[4] = 5;
 if(!invincible)
 {
 	hp = hp - instance_nearest(x, y, obj_Enemies).damage;
+	alarm[7] = healthRegenCooldown;
 }
 invincible = true;
 alarm[5] = 10;

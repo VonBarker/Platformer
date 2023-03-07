@@ -17,3 +17,4 @@ basicNotOnCooldown = true;
 basicCooldown = 0;
 
 hp = 100;
+healthRegenCooldown = 1200;

@@ -93,3 +93,7 @@ if(hp <= 0)
 {
 	room_restart();
 }
+if(hp > 100)
+{
+	hp = 100;
+}
