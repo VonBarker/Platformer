@@ -18,3 +18,7 @@ basicCooldown = 0;
 
 hp = 100;
 healthRegenCooldown = 1200;
+
+stamina = 100;
+
+basicProjectileStaminCost = 3;

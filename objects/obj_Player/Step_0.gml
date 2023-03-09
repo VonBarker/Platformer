@@ -55,12 +55,14 @@ y = y + vsp;
 
 //Attacks
 //Basic Projectile
-if(key_basicAttack) && (basicNotOnCooldown)
+if(key_basicAttack) && (basicNotOnCooldown) && (stamina >= basicProjectileStaminCost)
 {
 	basicNotOnCooldown = false;
 	instance_create_layer(x, y, "Instances", obj_BasicProjectile);
+	stamina = stamina - basicProjectileStaminCost;
 	basicCooldown = obj_BasicProjectile.cooldown;
 	alarm[0] = basicCooldown;
+	alarm[9] = room_speed*5;
 }
 //Basic Melee
 if(key_MeleeAttack && key_up && canAttack)
@@ -96,4 +98,9 @@ if(hp <= 0)
 if(hp > 100)
 {
 	hp = 100;
+}
+//Stamina
+if(stamina > 100)
+{
+	stamina = 100;
 }
