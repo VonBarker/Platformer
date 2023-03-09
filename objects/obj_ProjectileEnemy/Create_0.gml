@@ -10,7 +10,8 @@ hp = 25;
 invincible = false;
 
 damage = 0;
-knockbackForce = 0;
+HorizontalknockbackForce = 0;
+VerticalknockbackForce = 0;
 
 attackNotOnCooldown = true;
 attackCooldown = 150;

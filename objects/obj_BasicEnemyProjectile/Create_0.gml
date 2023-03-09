@@ -4,4 +4,5 @@ startLocationX = x;
 startLocationY = y;
 
 damage = irandom_range(5,8);
-knockbackForce = 1;
+HorizontalknockbackForce = 1;
+VerticalknockbackForce = 0;

@@ -10,4 +10,5 @@ hp = 25;
 invincible = false;
 
 damage = irandom_range(3,5);
-knockbackForce = 5;
+HorizontalknockbackForce = 5;
+VerticalknockbackForce = 5;

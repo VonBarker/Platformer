@@ -1,0 +1,1 @@
+damage = irandom_range(11,14);
