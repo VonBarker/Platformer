@@ -12,8 +12,8 @@
   "spriteMaskId": null,
   "persistent": false,
   "parentObjectId": {
-    "name": "obj_Enemies",
-    "path": "objects/obj_Enemies/obj_Enemies.yy",
+    "name": "obj_EnemiesSolid",
+    "path": "objects/obj_EnemiesSolid/obj_EnemiesSolid.yy",
   },
   "physicsObject": false,
   "physicsSensor": false,
