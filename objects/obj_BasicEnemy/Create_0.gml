@@ -12,3 +12,6 @@ invincible = false;
 damage = irandom_range(3,5);
 HorizontalknockbackForce = 5;
 VerticalknockbackForce = 5;
+
+coinsMin = 1;
+coinsMax = 3;

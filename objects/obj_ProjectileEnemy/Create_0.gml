@@ -15,3 +15,6 @@ VerticalknockbackForce = 0;
 
 attackNotOnCooldown = true;
 attackCooldown = 150;
+
+coinsMin = 2;
+coinsMax = 4;

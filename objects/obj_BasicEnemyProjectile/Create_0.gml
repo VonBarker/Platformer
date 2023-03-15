@@ -6,3 +6,6 @@ startLocationY = y;
 damage = irandom_range(5,8);
 HorizontalknockbackForce = 1;
 VerticalknockbackForce = 0;
+
+coinsMin = 0;
+coinsMax = 0;
