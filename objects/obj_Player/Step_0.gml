@@ -1,16 +1,16 @@
-key_up = keyboard_check(ord("W"));
-key_left = keyboard_check(ord("A"));
-key_down = keyboard_check(ord("S"));
-key_right = keyboard_check(ord("D"));
-key_jump = keyboard_check_pressed(vk_space);
-key_MeleeAttack = mouse_check_button_pressed(mb_left) || keyboard_check(ord("F"));
-key_basicAttack =  keyboard_check(ord("H"));
-key_attack1 = keyboard_check(ord("J"));
-key_attack2 = keyboard_check(ord("K"));
-key_attack3 = keyboard_check(ord("L"));
+check_key_up = keyboard_check(ord(obj_Game.key_up));
+check_key_left = keyboard_check(ord(obj_Game.key_left));
+check_key_down = keyboard_check(ord(obj_Game.key_down));
+check_key_right = keyboard_check(ord(obj_Game.key_right));
+check_key_jump = keyboard_check_pressed(obj_Game.key_jump);
+check_key_MeleeAttack = keyboard_check(ord(obj_Game.key_MeleeAttack_Button1)) || mouse_check_button_pressed(obj_Game.key_MeleeAttack_Button2);
+check_key_BasicAttack =  keyboard_check(ord(obj_Game.key_BasicAttack));
+check_key_attack1 = keyboard_check(ord(obj_Game.key_attack1));
+check_key_attack2 = keyboard_check(ord(obj_Game.key_attack2));
+check_key_attack3 = keyboard_check(ord(obj_Game.key_attack3));
 
 // Movement
-var _move = key_right - key_left;
+var _move = check_key_right - check_key_left;
 
 if(controlable = true)
 {
@@ -25,7 +25,7 @@ else grounded = false;
 
 vsp = vsp + grv;
 
-if(key_jump) && (grounded)
+if(check_key_jump) && (grounded)
 {
 	vsp = -jumpsp;
 }
@@ -55,7 +55,7 @@ y = y + vsp;
 
 //Attacks
 //Basic Projectile
-if(key_basicAttack) && (basicNotOnCooldown) && (stamina >= basicProjectileStaminCost)
+if(check_key_BasicAttack) && (basicNotOnCooldown) && (stamina >= basicProjectileStaminCost)
 {
 	basicNotOnCooldown = false;
 	instance_create_layer(x, y, "Instances", obj_BasicProjectile);
@@ -65,19 +65,19 @@ if(key_basicAttack) && (basicNotOnCooldown) && (stamina >= basicProjectileStamin
 	alarm[9] = room_speed*5;
 }
 //Basic Melee
-if(key_MeleeAttack && key_up && canAttack)
+if(check_key_MeleeAttack && check_key_up && canAttack)
 {
 	instance_create_layer(x, y - (sprite_height/2) - 10, "Instances", obj_UpwardAttack);
 	canAttack = false;
 	alarm[6] = meleeCooldown;
 }
-else if(key_MeleeAttack && key_down && canAttack)
+else if(check_key_MeleeAttack && check_key_down && canAttack)
 {
 	instance_create_layer(x, y + (sprite_height/2) + 10, "Instances", obj_DownwardAttack);
 	canAttack = false;
 	alarm[6] = meleeCooldown;
 }
-else if(key_MeleeAttack && canAttack)
+else if(check_key_MeleeAttack && canAttack)
 {
 	instance_create_layer(x + (32 * image_xscale), y, "Instances", obj_HorizontalAttack);
 	canAttack = false;
@@ -107,7 +107,7 @@ if (place_meeting(x,y+2,obj_EnemiesSolid))
 }
 
 //Animation
-if (hsp != 0) && (!key_down)
+if (hsp != 0) && (!check_key_down)
 {
 	image_xscale = sign(hsp);
 }
