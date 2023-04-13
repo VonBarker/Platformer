@@ -1,13 +1,13 @@
-check_key_up = keyboard_check(ord(obj_Game.key_up));
-check_key_left = keyboard_check(ord(obj_Game.key_left));
-check_key_down = keyboard_check(ord(obj_Game.key_down));
-check_key_right = keyboard_check(ord(obj_Game.key_right));
+check_key_up = keyboard_check(obj_Game.key_up);
+check_key_left = keyboard_check(obj_Game.key_left);
+check_key_down = keyboard_check(obj_Game.key_down);
+check_key_right = keyboard_check(obj_Game.key_right);
 check_key_jump = keyboard_check_pressed(obj_Game.key_jump);
-check_key_MeleeAttack = keyboard_check(ord(obj_Game.key_MeleeAttack_Button1)) || mouse_check_button_pressed(obj_Game.key_MeleeAttack_Button2);
-check_key_BasicAttack =  keyboard_check(ord(obj_Game.key_BasicAttack));
-check_key_attack1 = keyboard_check(ord(obj_Game.key_attack1));
-check_key_attack2 = keyboard_check(ord(obj_Game.key_attack2));
-check_key_attack3 = keyboard_check(ord(obj_Game.key_attack3));
+check_key_MeleeAttack = keyboard_check(obj_Game.key_MeleeAttack_Button1) || mouse_check_button_pressed(obj_Game.key_MeleeAttack_Button2);
+check_key_BasicAttack =  keyboard_check(obj_Game.key_BasicAttack);
+check_key_attack1 = keyboard_check(obj_Game.key_attack1);
+check_key_attack2 = keyboard_check(obj_Game.key_attack2);
+check_key_attack3 = keyboard_check(obj_Game.key_attack3);
 
 // Movement
 var _move = check_key_right - check_key_left;

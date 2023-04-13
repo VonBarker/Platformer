@@ -23,6 +23,7 @@
     {"id":{"name":"spr_VerticalAttack","path":"sprites/spr_VerticalAttack/spr_VerticalAttack.yy",},"order":5,},
     {"id":{"name":"obj_EnemiesNoDamage","path":"objects/obj_EnemiesNoDamage/obj_EnemiesNoDamage.yy",},"order":14,},
     {"id":{"name":"obj_Player","path":"objects/obj_Player/obj_Player.yy",},"order":0,},
+    {"id":{"name":"obj_KeyNames","path":"objects/obj_KeyNames/obj_KeyNames.yy",},"order":22,},
     {"id":{"name":"obj_FlyingEnemy","path":"objects/obj_FlyingEnemy/obj_FlyingEnemy.yy",},"order":15,},
     {"id":{"name":"obj_Spikes","path":"objects/obj_Spikes/obj_Spikes.yy",},"order":16,},
     {"id":{"name":"font_Menu","path":"fonts/font_Menu/font_Menu.yy",},"order":0,},
