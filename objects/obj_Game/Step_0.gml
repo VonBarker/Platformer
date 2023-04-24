@@ -6,7 +6,7 @@ if(keyboard_check_pressed(vk_escape))
 			global.cameraY + global.cameraHeight/3,
 			[
 				["Settings", SettingMenu],
-				["Option 2", -1],
+				["Main Menu", MainMenu],
 				["Close", -1]
 			],
 			"",
