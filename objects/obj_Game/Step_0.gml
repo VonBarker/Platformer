@@ -7,6 +7,7 @@ if(keyboard_check_pressed(vk_escape))
 			[
 				["Settings", SettingMenu],
 				["Main Menu", MainMenu],
+				["Save Game", SaveGame],
 				["Close", -1]
 			],
 			"",
