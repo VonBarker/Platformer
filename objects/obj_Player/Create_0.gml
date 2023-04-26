@@ -22,3 +22,5 @@ healthRegenCooldown = 1200;
 stamina = 100;
 
 basicProjectileStaminCost = 3;
+
+coins = 0;

@@ -11,7 +11,8 @@ with(obj_Player)
 		y : y,
 		x : x,
 		hp : hp,
-		stamina : stamina
+		stamina : stamina,
+		coins : coins
 	}
 	array_push(_saveData, _saveEntity);
 }

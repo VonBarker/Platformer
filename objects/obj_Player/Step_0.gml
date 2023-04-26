@@ -115,7 +115,7 @@ if (hsp != 0) && (!check_key_down)
 //Health
 if(hp <= 0)
 {
-	room_restart();
+	LoadGame();
 }
 if(hp > 100)
 {

@@ -10,5 +10,4 @@ key_attack1 = 74;
 key_attack2 = 75;
 key_attack3 = 76;
 
-coins = 0;
 paused = false;

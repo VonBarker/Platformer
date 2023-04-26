@@ -1,1 +1,1 @@
-if(position_meeting(mouse_x, mouse_y, obj_StartButton) && mouse_check_button_pressed(mb_left)) LoadGame();
+if(position_meeting(mouse_x, mouse_y, obj_StartButton) && mouse_check_button_pressed(mb_left)) room_goto(rm_Main);

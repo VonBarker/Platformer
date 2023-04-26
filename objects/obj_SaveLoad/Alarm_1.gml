@@ -19,6 +19,7 @@ if(file_exists("savedgame.save"))
 			y = _loadEntity.y;
 			hp = _loadEntity.hp;
 			stamina = _loadEntity.stamina;
+			coins = _loadEntity.coins;
 		}
 	}
 	show_debug_message("Game Loaded!" + _string);
