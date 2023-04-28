@@ -3,6 +3,28 @@
 var  _saveData = array_create(0);
 
 //For each instance, create a struct and add it to the array
+with(obj_Game)
+{
+	var _saveEntity =
+	{
+		obj : object_get_name(object_index),
+		y : y,
+		x : x,
+		key_up : key_up,
+		key_left : key_left,
+		key_down : key_down,
+		key_right : key_right,
+		key_jump : key_jump,
+		key_MeleeAttack_Button1 : key_MeleeAttack_Button1,
+		key_BasicAttack : key_BasicAttack,
+		key_attack1 : key_attack1,
+		key_attack2 : key_attack2,
+		key_attack3 : key_attack3,
+		coins : coins
+	}
+	array_push(_saveData, _saveEntity);
+}				
+
 with(obj_Player)
 {
 	var _saveEntity =
@@ -11,8 +33,7 @@ with(obj_Player)
 		y : y,
 		x : x,
 		hp : hp,
-		stamina : stamina,
-		coins : coins
+		stamina : stamina
 	}
 	array_push(_saveData, _saveEntity);
 }
