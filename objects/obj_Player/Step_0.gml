@@ -83,6 +83,12 @@ else if(check_key_MeleeAttack && canAttack)
 	canAttack = false;
 	alarm[6] = meleeCooldown;
 }
+//Special Attack 1
+obj_Game.attack1Cooldown = obj_Game.attack1Cooldown - 1;
+if(check_key_attack1 && obj_Game.attack1Cooldown <= 0  && !instance_exists(obj_HighJumpAbility))
+{
+	if(obj_Game.attack1 = "HighJump") instance_create_layer(x, y, "Instances", obj_HighJumpAbility);
+}
 
 //Solid Enemy Collision
 if (place_meeting(x,y+2,obj_EnemiesSolid))
