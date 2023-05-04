@@ -27,3 +27,4 @@ if(frame = 20)
 }
 
 if(obj_Game.attack1 = "HighJump") obj_Game.attack1Cooldown = 30*room_speed;
+if(frame = 21) instance_destroy();
