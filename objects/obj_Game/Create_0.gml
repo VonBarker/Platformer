@@ -19,3 +19,6 @@ attack1Cooldown = 0;
 
 attack2 = "RapidFire";
 attack2Cooldown = 0;
+
+attack3 = "SwordSwing";
+attack3Cooldown = 0;

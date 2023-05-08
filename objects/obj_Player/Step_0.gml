@@ -97,6 +97,14 @@ if(check_key_attack2 && obj_Game.attack2Cooldown <= 0  && !instance_exists(obj_R
 	if(obj_Game.attack2 = "RapidFire") instance_create_layer(x, y, "Instances", obj_RapidFireAbility);
 }
 
+//Special Attack 3
+obj_Game.attack3Cooldown = obj_Game.attack3Cooldown - 1;
+if(check_key_attack3 && obj_Game.attack3Cooldown <= 0  && !instance_exists(obj_LargeSwordSwingAbility))
+{
+	if(obj_Game.attack3 = "SwordSwing") instance_create_layer(x, y + 48, "Instances", obj_LargeSwordSwingAbility);
+}
+
+
 //Solid Enemy Collision
 if (place_meeting(x,y+2,obj_EnemiesSolid))
 {
