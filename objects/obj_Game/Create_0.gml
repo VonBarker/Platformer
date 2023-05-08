@@ -16,3 +16,6 @@ coins = 0;
 
 attack1 = "HighJump";
 attack1Cooldown = 0;
+
+attack2 = "RapidFire";
+attack2Cooldown = 0;

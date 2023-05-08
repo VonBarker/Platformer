@@ -90,6 +90,13 @@ if(check_key_attack1 && obj_Game.attack1Cooldown <= 0  && !instance_exists(obj_H
 	if(obj_Game.attack1 = "HighJump") instance_create_layer(x, y, "Instances", obj_HighJumpAbility);
 }
 
+//Special Attack 2
+obj_Game.attack2Cooldown = obj_Game.attack2Cooldown - 1;
+if(check_key_attack2 && obj_Game.attack2Cooldown <= 0  && !instance_exists(obj_RapidFireAbility))
+{
+	if(obj_Game.attack2 = "RapidFire") instance_create_layer(x, y, "Instances", obj_RapidFireAbility);
+}
+
 //Solid Enemy Collision
 if (place_meeting(x,y+2,obj_EnemiesSolid))
 {
