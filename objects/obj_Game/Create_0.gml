@@ -22,3 +22,8 @@ attack2Cooldown = 0;
 
 attack3 = "SwordSwing";
 attack3Cooldown = 0;
+
+//Abilities
+swordSwingUnlocked = true;
+rapidFireUnlocked = true;
+highJumpUnlocked = true;

@@ -1,0 +1,1 @@
+if(obj_Game.rapidFireUnlocked = true) sprite_index = spr_AbilitySelectionUnlockedRapidFire;

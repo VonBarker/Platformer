@@ -1,0 +1,1 @@
+draw_sprite_stretched(spr_MenuBox, 0, menuX, menuY, width, height);

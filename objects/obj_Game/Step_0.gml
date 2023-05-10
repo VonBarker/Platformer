@@ -15,3 +15,9 @@ if(keyboard_check_pressed(vk_escape))
 			global.cameraHeight/3
 		)
 }
+
+if(keyboard_check_pressed(vk_tab))
+{
+	if!(instance_exists(obj_AbilitySelectionMenu)) instance_create_depth(0, 0, -998, obj_AbilitySelectionMenu);
+	else instance_destroy(obj_AbilitySelectionMenu);
+}
