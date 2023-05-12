@@ -1,16 +1,16 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_AbilitySelectionLargeSwordSwing",
-  "spriteId": {
-    "name": "spr_AbilitySelectionLockedLargeSwordSwing",
-    "path": "sprites/spr_AbilitySelectionLockedLargeSwordSwing/spr_AbilitySelectionLockedLargeSwordSwing.yy",
-  },
+  "name": "obj_Attack1Button",
+  "spriteId": null,
   "solid": false,
   "visible": true,
   "managed": true,
-  "spriteMaskId": null,
-  "persistent": true,
+  "spriteMaskId": {
+    "name": "spr_AttackButtonEmpty",
+    "path": "sprites/spr_AttackButtonEmpty/spr_AttackButtonEmpty.yy",
+  },
+  "persistent": false,
   "parentObjectId": null,
   "physicsObject": false,
   "physicsSensor": false,
@@ -25,8 +25,8 @@
   "physicsKinematic": false,
   "physicsShapePoints": [],
   "eventList": [
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":0,"collisionObjectId":null,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,},
+    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":8,"collisionObjectId":null,},
   ],
   "properties": [],
   "overriddenProperties": [],

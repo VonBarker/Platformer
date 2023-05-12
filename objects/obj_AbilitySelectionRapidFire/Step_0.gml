@@ -1,17 +1,12 @@
-if(position_meeting(mouse_x, mouse_y, obj_AbilitySelectionRapidFire) && mouse_check_button_pressed(mb_left))
+if(position_meeting(mouse_x, mouse_y, obj_AbilitySelectionRapidFire) && mouse_check_button(mb_left))
 {
-	Menu
-		(
-			global.cameraX + global.cameraWidth/12 * 5,
-			global.cameraY + global.cameraHeight/3,
-			[
-				["Ability 1", -1],
-				["Ability 2", -1],
-				["Ability 3", -1],
-				["Close", -1]
-			],
-			"Set As...",
-			global.cameraWidth/6,
-			global.cameraHeight/3
-		)
+	x = mouse_x - 40;
+	y = mouse_y - 40;
+}
+
+if(mouse_check_button_released(mb_left) || !position_meeting(mouse_x, mouse_y, obj_AbilitySelectionRapidFire))
+{
+	if(position_meeting(x, y, obj_Attack1Button)) obj_Game.attack1 = "RapidFire";
+	x = startLocationX;
+	y = startLocationY;
 }

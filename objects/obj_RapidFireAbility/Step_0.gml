@@ -8,5 +8,6 @@ if!(frame % 10)
 	instance_create_layer(x, y, "Instances", obj_BasicProjectile);
 }
 
+if(obj_Game.attack1 = "RapidFire") obj_Game.attack1Cooldown = 45*room_speed;
 if(obj_Game.attack2 = "RapidFire") obj_Game.attack2Cooldown = 45*room_speed;
 if(frame >= 200) instance_destroy();
