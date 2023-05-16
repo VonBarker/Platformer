@@ -6,7 +6,9 @@ if(position_meeting(mouse_x, mouse_y, obj_AbilitySelectionLargeSwordSwing) && mo
 
 if(mouse_check_button_released(mb_left) || !position_meeting(mouse_x, mouse_y, obj_AbilitySelectionLargeSwordSwing))
 {
-	if(position_meeting(x, y, obj_Attack1Button)) obj_Game.attack1 = "SwordSwing";
+	if(position_meeting(x + 40, y + 40, obj_Attack1Button)) obj_Game.attack1 = "SwordSwing";
+	if(position_meeting(x + 40, y + 40, obj_Attack2Button)) obj_Game.attack2 = "SwordSwing";
+	if(position_meeting(x + 40, y + 40, obj_Attack3Button)) obj_Game.attack3 = "SwordSwing";
 	x = startLocationX;
 	y = startLocationY;
 }

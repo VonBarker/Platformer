@@ -6,7 +6,9 @@ if(position_meeting(mouse_x, mouse_y, obj_AbilitySelectionHighJump) && mouse_che
 
 if(mouse_check_button_released(mb_left) || !position_meeting(mouse_x, mouse_y, obj_AbilitySelectionHighJump))
 {
-	if(position_meeting(x, y, obj_Attack1Button)) obj_Game.attack1 = "HighJump";
+	if(position_meeting(x + 40, y + 40, obj_Attack1Button)) obj_Game.attack1 = "HighJump";
+	if(position_meeting(x + 40, y + 40, obj_Attack2Button)) obj_Game.attack2 = "HighJump";
+	if(position_meeting(x + 40, y + 40, obj_Attack3Button)) obj_Game.attack3 = "HighJump";
 	x = startLocationX;
 	y = startLocationY;
 }

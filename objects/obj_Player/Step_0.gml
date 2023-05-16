@@ -100,6 +100,14 @@ if(check_key_attack1 && obj_Game.attack1Cooldown <= 0  && !instance_exists(obj_R
 
 //Special Attack 2
 obj_Game.attack2Cooldown = obj_Game.attack2Cooldown - 1;
+if(check_key_attack2 && obj_Game.attack2Cooldown <= 0  && !instance_exists(obj_HighJumpAbility))
+{
+	if(obj_Game.attack2 = "HighJump") instance_create_layer(x, y, "Instances", obj_HighJumpAbility);
+}
+if(check_key_attack2 && obj_Game.attack2Cooldown <= 0  && !instance_exists(obj_LargeSwordSwingAbility))
+{
+	if(obj_Game.attack2 = "SwordSwing") instance_create_layer(x, y + 48, "Instances", obj_LargeSwordSwingAbility);
+}
 if(check_key_attack2 && obj_Game.attack2Cooldown <= 0  && !instance_exists(obj_RapidFireAbility))
 {
 	if(obj_Game.attack2 = "RapidFire") instance_create_layer(x, y, "Instances", obj_RapidFireAbility);
@@ -107,9 +115,17 @@ if(check_key_attack2 && obj_Game.attack2Cooldown <= 0  && !instance_exists(obj_R
 
 //Special Attack 3
 obj_Game.attack3Cooldown = obj_Game.attack3Cooldown - 1;
+if(check_key_attack3 && obj_Game.attack3Cooldown <= 0  && !instance_exists(obj_HighJumpAbility))
+{
+	if(obj_Game.attack3 = "HighJump") instance_create_layer(x, y, "Instances", obj_HighJumpAbility);
+}
 if(check_key_attack3 && obj_Game.attack3Cooldown <= 0  && !instance_exists(obj_LargeSwordSwingAbility))
 {
 	if(obj_Game.attack3 = "SwordSwing") instance_create_layer(x, y + 48, "Instances", obj_LargeSwordSwingAbility);
+}
+if(check_key_attack3 && obj_Game.attack3Cooldown <= 0  && !instance_exists(obj_RapidFireAbility))
+{
+	if(obj_Game.attack3 = "RapidFire") instance_create_layer(x, y, "Instances", obj_RapidFireAbility);
 }
 
 

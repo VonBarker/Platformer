@@ -9,5 +9,6 @@ if!(frame % 10)
 }
 
 if(obj_Game.attack1 = "RapidFire") obj_Game.attack1Cooldown = 45*room_speed;
-if(obj_Game.attack2 = "RapidFire") obj_Game.attack2Cooldown = 45*room_speed;
+else if(obj_Game.attack2 = "RapidFire") obj_Game.attack2Cooldown = 45*room_speed;
+else if(obj_Game.attack3 = "RapidFire") obj_Game.attack3Cooldown = 45*room_speed;
 if(frame >= 200) instance_destroy();
