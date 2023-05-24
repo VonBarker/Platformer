@@ -2,3 +2,5 @@ if(obj_Game.highJumpUnlocked = true) sprite_index = spr_AbilitySelectionUnlocked
 
 startLocationX = x;
 startLocationY = y;
+
+pickedUp = false;
