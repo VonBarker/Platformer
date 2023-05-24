@@ -3,6 +3,7 @@ check_key_left = keyboard_check(obj_Game.key_left);
 check_key_down = keyboard_check(obj_Game.key_down);
 check_key_right = keyboard_check(obj_Game.key_right);
 check_key_jump = keyboard_check_pressed(obj_Game.key_jump);
+check_key_interact = keyboard_check_pressed(obj_Game.key_interact);
 check_key_MeleeAttack = keyboard_check(obj_Game.key_MeleeAttack_Button1) || mouse_check_button_pressed(obj_Game.key_MeleeAttack_Button2);
 check_key_BasicAttack =  keyboard_check(obj_Game.key_BasicAttack);
 check_key_attack1 = keyboard_check(obj_Game.key_attack1);

@@ -3,6 +3,7 @@ key_left = 65;
 key_down = 83;
 key_right = 68;
 key_jump = 32;
+key_interact = 69;
 key_MeleeAttack_Button1 = 70;
 key_MeleeAttack_Button2 = mb_left;
 key_BasicAttack = 72;

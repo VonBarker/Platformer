@@ -9,6 +9,7 @@ function KeybindsMenu(){
 				["Aim Up:           " + global.asc_def[obj_Game.key_up], ChangeUpKeybind],
 				["Aim Down:         " + global.asc_def[obj_Game.key_down], ChangeDownKeybind],
 				["Jump:             " + global.asc_def[obj_Game.key_jump], ChangeJumpKeybind],
+				["Interact:         " + global.asc_def[obj_Game.key_interact], ChangeInteractKeybind],
 				["Melee:            " + global.asc_def[obj_Game.key_MeleeAttack_Button1], ChangeMeleeKeybind],
 				["Basic Attack:     " + global.asc_def[obj_Game.key_BasicAttack], ChangeBasicAttackKeybind],
 				["Special Attack 1: " + global.asc_def[obj_Game.key_attack1], ChangeSpecialAttack1Keybind],
