@@ -21,6 +21,7 @@
     {"id":{"name":"spr_AbilitySelectionLockedRapidFire","path":"sprites/spr_AbilitySelectionLockedRapidFire/spr_AbilitySelectionLockedRapidFire.yy",},"order":21,},
     {"id":{"name":"obj_ProjectileEnemy","path":"objects/obj_ProjectileEnemy/obj_ProjectileEnemy.yy",},"order":12,},
     {"id":{"name":"MainMenuFunction","path":"scripts/MainMenuFunction/MainMenuFunction.yy",},"order":6,},
+    {"id":{"name":"obj_HiddenCoin","path":"objects/obj_HiddenCoin/obj_HiddenCoin.yy",},"order":40,},
     {"id":{"name":"spr_AbilitySelectionUnlockedHighJump","path":"sprites/spr_AbilitySelectionUnlockedHighJump/spr_AbilitySelectionUnlockedHighJump.yy",},"order":24,},
     {"id":{"name":"ChangeMeleeKeybindFunction","path":"scripts/ChangeMeleeKeybindFunction/ChangeMeleeKeybindFunction.yy",},"order":0,},
     {"id":{"name":"ChangeSpecialAttack1KeybindFunction","path":"scripts/ChangeSpecialAttack1KeybindFunction/ChangeSpecialAttack1KeybindFunction.yy",},"order":0,},

@@ -1,14 +1,11 @@
-if(mouse_check_button_pressed(mb_left)) pickedUp = false;
-if(position_meeting(mouse_x, mouse_y, obj_AbilitySelectionHighJump) && mouse_check_button_pressed(mb_left) && !obj_AbilitySelectionMenu.abilitySelected) pickedUp = true;
-
-if(pickedUp)
+if(position_meeting(mouse_x, mouse_y, obj_AbilitySelectionHighJump) && mouse_check_button(mb_left) && !obj_AbilitySelectionMenu.abilitySelected)
 {
 	x = mouse_x - 40;
 	y = mouse_y - 40;
 	obj_AbilitySelectionMenu.abilitySelected = true;
 }
 
-if(pickedUp = false)
+if(mouse_check_button_released(mb_left) || !position_meeting(mouse_x, mouse_y, obj_AbilitySelectionHighJump))
 {
 	if(position_meeting(x + 40, y + 40, obj_Attack1Button)) obj_Game.attack1 = "HighJump";
 	if(position_meeting(x + 40, y + 40, obj_Attack2Button)) obj_Game.attack2 = "HighJump";
