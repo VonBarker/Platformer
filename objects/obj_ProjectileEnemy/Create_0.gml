@@ -14,7 +14,7 @@ HorizontalknockbackForce = 0;
 VerticalknockbackForce = 0;
 
 attackNotOnCooldown = true;
-attackCooldown = 150;
+attackCooldown = room_speed * 2.5;
 
 coinsMin = 2;
 coinsMax = 4;
