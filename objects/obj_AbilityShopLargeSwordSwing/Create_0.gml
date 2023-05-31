@@ -1,0 +1,1 @@
+if(obj_Game.swordSwingUnlocked = true) instance_destroy();

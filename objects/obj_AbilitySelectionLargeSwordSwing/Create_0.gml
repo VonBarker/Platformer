@@ -2,3 +2,6 @@ if(obj_Game.swordSwingUnlocked = true) sprite_index = spr_AbilitySelectionUnlock
 
 startLocationX = x;
 startLocationY = y;
+
+image_xscale = obj_AbilitySelectionMenu.xScale;
+image_yscale = obj_AbilitySelectionMenu.yScale;

@@ -1,14 +1,17 @@
-width = 1000;
-height = 550;
+xScale = global.cameraWidth/1366;
+yScale = global.cameraHeight/768;
 
-menuX = global.cameraWidth/2 - 1000/2;
-menuY = global.cameraHeight/2 + 550/4;
+width =  global.cameraWidth/12 * 11 * xScale;
+height = global.cameraHeight/8 * 7 * yScale;
 
-column = 80;
-row = 80;
+menuX = global.cameraX + (global.cameraWidth - width) * xScale/2;
+menuY = global.cameraY + (global.cameraHeight- height) * yScale/2;
+
+column = 80 * xScale;
+row = 80 * yScale;
 
 abilitySelected = false;
 
-instance_create_depth(menuX + 16 + column*0, menuY + 16 + row*0, -999, obj_AbilitySelectionLargeSwordSwing);
-instance_create_depth(menuX + 16*2 + column*1, menuY + 16 + row*0, -999, obj_AbilitySelectionRapidFire);
-instance_create_depth(menuX + 16*3 + column*2, menuY + 16 + row*0, -999, obj_AbilitySelectionHighJump);
+instance_create_depth(menuX + 16 * xScale + column*0, menuY + 16 * yScale + row*0, -999, obj_AbilitySelectionLargeSwordSwing);
+instance_create_depth(menuX + 16*2 * xScale + column*1, menuY + 16 * yScale + row*0, -999, obj_AbilitySelectionRapidFire);
+instance_create_depth(menuX + 16*3 * xScale + column*2, menuY + 16 * yScale + row*0, -999, obj_AbilitySelectionHighJump);

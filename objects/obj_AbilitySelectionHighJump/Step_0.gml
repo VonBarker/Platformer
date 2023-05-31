@@ -1,4 +1,4 @@
-if(position_meeting(mouse_x, mouse_y, obj_AbilitySelectionHighJump) && mouse_check_button(mb_left) && !obj_AbilitySelectionMenu.abilitySelected)
+if(position_meeting(mouse_x, mouse_y, obj_AbilitySelectionHighJump) && mouse_check_button(mb_left) && obj_Game.highJumpUnlocked = true && !obj_AbilitySelectionMenu.abilitySelected)
 {
 	x = mouse_x - 40;
 	y = mouse_y - 40;

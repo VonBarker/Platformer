@@ -1,0 +1,1 @@
+if(obj_Game.rapidFireUnlocked = true) instance_destroy();
