@@ -5,9 +5,9 @@ if(controlable)
 vsp = vsp + grv;
 
 //Horizontal Collision
-if (place_meeting(x+hsp,y,obj_Wall))
+if (place_meeting(x+hsp,y,obj_Wall) || place_meeting(x+hsp,y,obj_EnemyWall))
 {
-	while (!place_meeting(x+sign(hsp),y,obj_Wall))
+	while (!place_meeting(x+sign(hsp),y,obj_Wall) && !place_meeting(x+hsp,y,obj_EnemyWall))
 	{
 		x = x + sign(hsp);
 	}
@@ -17,15 +17,15 @@ if (place_meeting(x+hsp,y,obj_Wall))
 x = x + hsp;
 
 //Vertical Collision
-if (place_meeting(x,y+vsp,obj_Wall))
+if (place_meeting(x,y+vsp,obj_Wall) || place_meeting(x,y+vsp,obj_EnemyWall))
 {
-	while (!place_meeting(x,y+sign(vsp),obj_Wall))
+	while (!place_meeting(x,y+sign(vsp),obj_Wall) && !place_meeting(x,y+vsp,obj_EnemyWall))
 	{
 		y = y + sign(vsp);
 	}
 	vsp = 0;
 	
-	if(!position_meeting(x + (sprite_width/2)*dir, y + (sprite_height/2) + 1, obj_Wall))
+	if(!position_meeting(x + (sprite_width/2)*dir, y + (sprite_height/2) + 1, obj_Wall) && !position_meeting(x + (sprite_width/2)*dir, y + (sprite_height/2) + 1, obj_EnemyWall))
 	{
 		dir = dir * -1;
 	}

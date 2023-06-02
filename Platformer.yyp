@@ -4,10 +4,12 @@
   "name": "Platformer",
   "resources": [
     {"id":{"name":"spr_BasicEnemy","path":"sprites/spr_BasicEnemy/spr_BasicEnemy.yy",},"order":6,},
+    {"id":{"name":"spr_EnemyWall","path":"sprites/spr_EnemyWall/spr_EnemyWall.yy",},"order":31,},
     {"id":{"name":"spr_Boss","path":"sprites/spr_Boss/spr_Boss.yy",},"order":30,},
     {"id":{"name":"SubmitJumpKeybindFunction","path":"scripts/SubmitJumpKeybindFunction/SubmitJumpKeybindFunction.yy",},"order":1,},
     {"id":{"name":"obj_BasicEnemyProjectile","path":"objects/obj_BasicEnemyProjectile/obj_BasicEnemyProjectile.yy",},"order":13,},
     {"id":{"name":"obj_Wall","path":"objects/obj_Wall/obj_Wall.yy",},"order":1,},
+    {"id":{"name":"obj_EnemyWall","path":"objects/obj_EnemyWall/obj_EnemyWall.yy",},"order":43,},
     {"id":{"name":"obj_Coin","path":"objects/obj_Coin/obj_Coin.yy",},"order":18,},
     {"id":{"name":"ChangeUpKeybindFunction","path":"scripts/ChangeUpKeybindFunction/ChangeUpKeybindFunction.yy",},"order":0,},
     {"id":{"name":"ChangeBasicAttackKeybindFunction","path":"scripts/ChangeBasicAttackKeybindFunction/ChangeBasicAttackKeybindFunction.yy",},"order":0,},
