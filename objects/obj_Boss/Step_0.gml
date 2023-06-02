@@ -23,7 +23,6 @@ if (place_meeting(x+hsp,y,obj_Wall) || place_meeting(x+hsp,y,obj_EnemyWall))
 		x = x + sign(hsp);
 	}
 	hsp = 0;
-	dir = dir * -1;
 }
 x = x + hsp;
 
@@ -54,5 +53,6 @@ if(distance_to_object(obj_Player) < 450 && attackNotOnCooldown)
 //Health
 if(hp <= 0)
 {
+	instance_create_layer(x, y, "Instances", obj_AbilityUnlockHighJump);
 	instance_destroy();
 }
