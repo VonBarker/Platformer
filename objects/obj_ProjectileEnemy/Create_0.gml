@@ -16,5 +16,5 @@ VerticalknockbackForce = 0;
 attackNotOnCooldown = true;
 attackCooldown = room_speed * 2.5;
 
-coinsMin = 2;
-coinsMax = 4;
+coinsMin = 4;
+coinsMax = 7;

@@ -1,6 +1,14 @@
 hsp = dir * walksp;
 vsp = vsp + grv;
 
+angleToPlayer = point_direction(x, y, obj_Player.x, obj_Player.y);
+
+if(distance_to_object(obj_Player) < 800)
+{
+	if(angleToPlayer < 90) || (angleToPlayer > 270) dir = 1;
+	else dir = -1;
+}
+
 if (place_meeting(x,y+1,obj_Wall))
 {
 	grounded = true;
@@ -36,7 +44,7 @@ if (place_meeting(x,y+vsp,obj_Wall))
 y = y + vsp;
 
 //Attack
-if(distance_to_object(obj_Player) < 100 && attackNotOnCooldown)
+if(distance_to_object(obj_Player) < 450 && attackNotOnCooldown)
 {
 	attackNotOnCooldown = false;
 	instance_create_layer(x, y, "Instances", obj_BossJump);

@@ -29,6 +29,6 @@ if(frame = 20)
 if(obj_Boss.vsp > -1) obj_Boss.vsp = 25;
 if(obj_Boss.grounded && frame > 20) 
 {
-	obj_Boss.walksp = 0.5;
+	obj_Boss.walksp = 1;
 	instance_destroy();
 }
