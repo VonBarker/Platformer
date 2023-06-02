@@ -15,7 +15,7 @@ function KeybindsMenu(){
 				["Special Attack 1: " + global.asc_def[obj_Game.key_attack1], ChangeSpecialAttack1Keybind],
 				["Special Attack 2: " + global.asc_def[obj_Game.key_attack2], ChangeSpecialAttack2Keybind],
 				["Special Attack 3: " + global.asc_def[obj_Game.key_attack3], ChangeSpecialAttack3Keybind],
-				["Close", -1]
+				["Close", ClosePauseMenu]
 			],
 			"Keybinds",
 			global.cameraWidth/6,

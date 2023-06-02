@@ -1,5 +1,6 @@
-if(keyboard_check_pressed(vk_escape))
+if(keyboard_check_pressed(vk_escape) && instance_position(obj_Player.x, obj_Player.y, obj_SafeZone))
 {
+	instance_create_layer(obj_Player.x, obj_Player.y, "Instances", obj_PauseWall);
 	Menu
 		(
 			global.cameraX + global.cameraWidth/12 * 5,
@@ -8,7 +9,7 @@ if(keyboard_check_pressed(vk_escape))
 				["Settings", SettingMenu],
 				["Main Menu", MainMenu],
 				["Save Game", SaveGame],
-				["Close", -1]
+				["Close", ClosePauseMenu]
 			],
 			"",
 			global.cameraWidth/6,
@@ -16,8 +17,16 @@ if(keyboard_check_pressed(vk_escape))
 		)
 }
 
-if(keyboard_check_pressed(vk_tab))
+if(keyboard_check_pressed(vk_tab) && instance_position(obj_Player.x, obj_Player.y, obj_SafeZone))
 {
-	if!(instance_exists(obj_AbilitySelectionMenu)) instance_create_depth(0, 0, -998, obj_AbilitySelectionMenu);
-	else instance_destroy(obj_AbilitySelectionMenu);
+	if!(instance_exists(obj_AbilitySelectionMenu)) 
+	{
+		instance_create_depth(0, 0, -998, obj_AbilitySelectionMenu);
+		instance_create_layer(obj_Player.x, obj_Player.y, "Instances", obj_PauseWall)
+	}
+	else 
+	{
+		instance_destroy(obj_AbilitySelectionMenu);
+		instance_destroy(obj_PauseWall)
+	}
 }
