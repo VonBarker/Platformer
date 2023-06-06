@@ -15,6 +15,7 @@ with(obj_Game)
 		key_down : key_down,
 		key_right : key_right,
 		key_jump : key_jump,
+		key_interact : key_interact,
 		key_MeleeAttack_Button1 : key_MeleeAttack_Button1,
 		key_BasicAttack : key_BasicAttack,
 		key_attack1 : key_attack1,

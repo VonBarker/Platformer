@@ -28,3 +28,5 @@ attack3Cooldown = 0;
 swordSwingUnlocked = false;
 rapidFireUnlocked = false;
 highJumpUnlocked = false;
+
+draw_set_font(font_Menu);

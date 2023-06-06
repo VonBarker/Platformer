@@ -1,10 +1,10 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_StartButton",
+  "name": "obj_NewGameButton",
   "spriteId": {
-    "name": "spr_StartButton",
-    "path": "sprites/spr_StartButton/spr_StartButton.yy",
+    "name": "spr_NewGameButton",
+    "path": "sprites/spr_NewGameButton/spr_NewGameButton.yy",
   },
   "solid": false,
   "visible": true,
@@ -26,7 +26,6 @@
   "physicsShapePoints": [],
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,},
-    {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","isDnD":false,"eventNum":18,"eventType":9,"collisionObjectId":null,},
   ],
   "properties": [],
   "overriddenProperties": [],

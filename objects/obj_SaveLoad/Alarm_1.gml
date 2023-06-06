@@ -23,6 +23,7 @@ if(file_exists("savedgame.save"))
 				key_down = _loadEntity.key_down;
 				key_right = _loadEntity.key_right;
 				key_jump = _loadEntity.key_jump;
+				key_interact = _loadEntity.key_interact;
 				key_MeleeAttack_Button1 = _loadEntity.key_MeleeAttack_Button1;
 				key_BasicAttack = _loadEntity.key_BasicAttack;
 				key_attack1 = _loadEntity.key_attack1;
