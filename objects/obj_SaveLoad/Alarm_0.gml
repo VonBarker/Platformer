@@ -39,6 +39,16 @@ with(obj_Player)
 	array_push(_saveData, _saveEntity);
 }
 
+with(obj_HiddenCoin)
+{
+	var _saveEntity =
+	{
+		obj : object_get_name(object_index),
+		y : y,
+		x : x
+	}
+}
+
 //Turn data into a JSON string and save with buffer
 var _string = json_stringify(_saveData);
 var _buffer = buffer_create(string_byte_length(_string) + 1, buffer_fixed, 1);

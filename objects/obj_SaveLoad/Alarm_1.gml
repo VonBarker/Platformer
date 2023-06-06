@@ -2,6 +2,7 @@
 //Erase current game state
 with(obj_Game) instance_destroy();
 with(obj_Player) instance_destroy();
+with(obj_HiddenCoin) instance_destroy();
 
 if(file_exists("savedgame.save"))
 {
@@ -37,6 +38,11 @@ if(file_exists("savedgame.save"))
 				y = _loadEntity.y;
 				hp = _loadEntity.hp;
 				stamina = _loadEntity.stamina;
+			}
+			if(asset_get_index(_loadEntity.obj) = obj_HiddenCoin)
+			{
+				x = _loadEntity.x;
+				y = _loadEntity.y;
 			}
 		}
 	}
