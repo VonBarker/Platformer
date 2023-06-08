@@ -3,6 +3,10 @@
 with(obj_Game) instance_destroy();
 with(obj_Player) instance_destroy();
 with(obj_HiddenCoin) instance_destroy();
+with(obj_BasicEnemy) instance_destroy();
+with(obj_ProjectileEnemy) instance_destroy();
+with(obj_Boss) instance_destroy();
+with(obj_Coin) instance_destroy();
 
 if(file_exists("savedgame.save"))
 {
@@ -43,6 +47,25 @@ if(file_exists("savedgame.save"))
 			{
 				x = _loadEntity.x;
 				y = _loadEntity.y;
+			}
+			//Enemies
+			if(asset_get_index(_loadEntity.obj) = obj_BasicEnemy)
+			{
+				x = _loadEntity.x;
+				y = _loadEntity.y;
+				hp = _loadEntity.hp;
+			}
+			if(asset_get_index(_loadEntity.obj) = obj_ProjectileEnemy)
+			{
+				x = _loadEntity.x;
+				y = _loadEntity.y;
+				hp = _loadEntity.hp;
+			}
+			if(asset_get_index(_loadEntity.obj) = obj_Boss)
+			{
+				x = _loadEntity.x;
+				y = _loadEntity.y;
+				hp = _loadEntity.hp;
 			}
 		}
 	}

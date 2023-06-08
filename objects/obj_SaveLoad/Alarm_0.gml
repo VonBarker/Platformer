@@ -8,8 +8,8 @@ with(obj_Game)
 	var _saveEntity =
 	{
 		obj : object_get_name(object_index),
-		y : y,
 		x : x,
+		y : y,
 		key_up : key_up,
 		key_left : key_left,
 		key_down : key_down,
@@ -31,8 +31,8 @@ with(obj_Player)
 	var _saveEntity =
 	{
 		obj : object_get_name(object_index),
-		y : y,
 		x : x,
+		y : y,
 		hp : hp,
 		stamina : stamina
 	}
@@ -44,9 +44,47 @@ with(obj_HiddenCoin)
 	var _saveEntity =
 	{
 		obj : object_get_name(object_index),
-		y : y,
-		x : x
+		x : x,
+		y : y
 	}
+	array_push(_saveData, _saveEntity);
+}
+
+//Enemies
+with(obj_BasicEnemy)
+{
+	var _saveEntity =
+	{
+		obj : object_get_name(object_index),
+		x : x,
+		y : y,
+		hp : hp
+	}
+	array_push(_saveData, _saveEntity);
+}
+
+with(obj_ProjectileEnemy)
+{
+	var _saveEntity =
+	{
+		obj : object_get_name(object_index),
+		x : x,
+		y : y,
+		hp : hp
+	}
+	array_push(_saveData, _saveEntity);
+}
+
+with(obj_Boss)
+{
+	var _saveEntity =
+	{
+		obj : object_get_name(object_index),
+		x : x,
+		y : y,
+		hp : hp
+	}
+	array_push(_saveData, _saveEntity);
 }
 
 //Turn data into a JSON string and save with buffer
