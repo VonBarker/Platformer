@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "obj_TeleportToSpawn",
   "spriteId": {
-    "name": "spr_AbilitySelectionUnlockedLargeSwordSwing",
-    "path": "sprites/spr_AbilitySelectionUnlockedLargeSwordSwing/spr_AbilitySelectionUnlockedLargeSwordSwing.yy",
+    "name": "spr_TeleportToSpawn",
+    "path": "sprites/spr_TeleportToSpawn/spr_TeleportToSpawn.yy",
   },
   "solid": false,
   "visible": true,
